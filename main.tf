@@ -12,3 +12,12 @@ resource "aws_vpc" "dep1" {
     }
   
 }
+
+resource "aws_vpc" "dep2" {
+    cidr_block = "192.168.1.0/24"
+    tags = {
+      "Name" = "VPC2"
+      
+    }
+  
+}
